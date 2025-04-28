@@ -3,12 +3,12 @@ using Microsoft.AspNetCore.Mvc;
 namespace DevOpsTest.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("[controller]")] // to get the webpage add /WeatherForecast to the URL
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
         {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+            "Freezing!", "Bracing!", "Chilly!", "Cool!", "Mild!", "Warm!", "Balmy!", "Hot!", "Sweltering!", "Scorching!"
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
